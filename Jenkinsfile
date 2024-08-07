@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/sanudeokar/wordpress'
+               git branch: 'main', url: 'https://github.com/sanudeokar/wordpress'
             }
         }
         stage('Build Docker Image') {
